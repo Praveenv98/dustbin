@@ -1,0 +1,11 @@
+Project idea: 
+Implement an EDSL to specify placement for Components.
+Similar to domain maps 
+and write allocators over domain maps to use with standard containers. 
+Steps:
+
+ 1.  Look for allocator implementation in BOOST,THRUST, or similar..
+ 2.  Try to fit domain maps inside allocator - allocator parameters maybe (localities, Policy -such as block, cyclic)
+ 3.  Write simple container from that allocators. 
+ 4.  Don't know about EDSL : ( 
+ 

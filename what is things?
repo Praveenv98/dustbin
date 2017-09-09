@@ -1,0 +1,41 @@
+For my reference 
+NOTE: MAY NOT CORRECT.
+HPX - Modern C++ Parallel runtime System and supports distributive computing across the cluster, based on Parallex execution model 
+uses
+
+Local control objects - Main part of hpx-runtime system because it provides the facilities for things to express in hpx and also to 
+represent synchronization between million of user-level threads(hpx-threads) it mainly supports the future and continuation via .then()
+and composition between futures like when_all, when_any, dataflow etc.
+
+AGAS-Active Global Address Space - Single common address space over the cluster of nodes(include GPU not sure) instead of partitioned 
+global address space, where each node have their own address space and the runtime system which uses PGAS, collects the whole node address
+space under the hood, this increases the necessary to keep the some sort of table for making address translation while 
+int a = 12;
+int * ptr = &a;
+move(a 2  loc2)
+will the ptr hold the address of valid location ? 
+
+Parcel port layers - parcels are the active messages which are sent to localities, Mostly it is the pack contains targets(execution site-id,
+function to execute and its arguments, possibly continuation if appicable) they are sent to execution sites without any sychronization
+between sites HPX currently uses OPENMP, MPI as backend it is also possible to use some other parcelport such as LIBFABRIC.
+
+Components are objects in HPX which can be created on the execution site's memory. They follow curiously recursive template pattern.
+They are created on execution site memory and their client objects can be created in the calling  execution site memory space.
+All these have address tags attached with active global address space, so the client can be created on wide number of execution sites,
+it way more natural,Isn't ?
+
+Threading subsystem - HPX doesn't have pre-emption does it sounds weird ? Wait HPX really mean it, Hpx-threads are really small at most
+run for microseconds less than 10,so threads have very very small less execution time and smaller context switch time. Everything is 
+thread all piece of code in HPX is a hpx-thread, that is piece of code is wrapped inside a thread and gets into task queue and
+gets scheduled once if precondition are met( whether all I/O ops are done and all data dependency are notified). HPX threads got 
+scheduled in one OS thread per one Core, and the thread affinity can be made through hpx-bind & it's friend's like(scattered, balanced)
+one queue steals from other queue's if it is empty but it not steal from other execution sites.
+
+Parallel Algorithms
+HPX implements in parallel algo's specified in the standard c++, with execution policy and executors. Parallelism TS is a good read to go
+with this.
+
+Serialization - Bits sent across wire ! No idea what mechanism HPX is using !
+HPX.Compute   -
+
+

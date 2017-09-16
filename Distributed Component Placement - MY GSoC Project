@@ -8,4 +8,9 @@ Steps:
  2.  Try to fit domain maps inside allocator - allocator parameters maybe (localities, Policy -such as block, cyclic)
  3.  Write simple container from that allocators. 
  4.  Don't know about EDSL : ( 
- 
+ Hpx is the standard way for writing parallel asynchronus  programs for local, distributed nodes of homogeneous and heterogenous processor
+ So what I think is devolping a language wrapper over hpx, to get the power of hpx. 
+ eg:
+ Python language using hpx through python API's so we can get the benefits of 
+ both  python libs and hpx lib ! 
+ Is that possible ? - 

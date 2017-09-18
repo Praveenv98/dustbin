@@ -1,0 +1,3 @@
+Opencl - open computing language. 
+It is a specification for doing computations on heterogeneous systems.I think it wraps resource in the heterogeneous and provides
+structured way to use them.( not sure) 

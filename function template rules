@@ -1,0 +1,10 @@
+(order matters)
+1. Function template name lookup (involves argument dependant lookup) - method when a name is "parsed by the parser"(maybe) is 
+   associated with the declaration that introduces it.
+   argument dependant lookup (ADL, Koenig lookup) -> is set of rules for looking up the unqualified function names in function call expr's.
+
+2. template argument deduction - method of detecting the exact type of the template (type) arguments
+
+3. template argument substuition(SFINAE) - After the arguments are deduced, now we have to substuition the template deduced types in 
+   the correct context, if the deduced template arguments are not fitted in the context it is substuition failure (not error), reduced 
+   from possible overload sets

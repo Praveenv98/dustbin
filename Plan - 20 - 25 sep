@@ -1,0 +1,17 @@
+20 - 25 tasks to be completed
+expected 
+   1 write programs using hpx without gpu
+     and analyze beachmarks
+   2 Take picture of code structure why are using it as like 
+     structure, and design, tmp etc
+   3 Signup for acm, and write blog about hpx
+   4 use SYCL - build, architecture, mail to developer list(code play)
+     make grounds good (study) from opencl -> SYCL.
+   5 watch videos abt design structue with templates in c++
+   6 Make some improvements on distributed cp, think new 
+     leave dmaps : )
+   7 Architectural details of CPU, GPU, processing units- memory 
+     details cache,
+   8 how hpx code converts into executable
+   9 windows & linux based codes guards
+   10 do real eval  

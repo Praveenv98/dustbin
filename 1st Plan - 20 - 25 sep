@@ -14,4 +14,7 @@ expected (b- blog, g- github)
      details cache, -g 
    8 how hpx code converts into executable -g 
    9 windows & linux based codes guards  -g 
-   10 do real eval  
+   10 do real eval                               
+   
+   Funny things 
+       maccabe clang tool

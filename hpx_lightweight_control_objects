@@ -1,0 +1,1 @@
+Split future -> converts  future<C>  to  C<future>  where C = container  tuple, array etc

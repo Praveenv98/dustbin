@@ -5,6 +5,9 @@ parallel algo and utilities   - gn
                                 
 More opencl and SYCL & try writing programs 
 for cpu kernels               - gn
+ 
+vectorization in other frameworks 
+thrust, C++AMP code 
 
 write blogs                   - b
 LLVM intro                    - gn

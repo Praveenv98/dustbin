@@ -1,12 +1,13 @@
+80 % code - 20 % s
 HPX implementation of 
-parallel algo and utilities   - g  
+parallel algo and utilities   - gn  
 (p algo framework)
-
+                                
 More opencl and SYCL & try writing programs 
-for cpu kernels               - g
+for cpu kernels               - gn
 
 write blogs                   - b
-LLVM intro                    - g
+LLVM intro                    - gn
 working 
 
 discuss sycl for hpx 

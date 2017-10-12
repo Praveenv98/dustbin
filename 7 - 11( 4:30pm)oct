@@ -1,21 +1,21 @@
 80 % code - 20 % s
 HPX implementation of 
-parallel algo and utilities   - gn  
+parallel algo and utilities   - gn               0 
 (p algo framework)
                                 
-More opencl and SYCL & try writing programs 
+More opencl and SYCL & try writing programs      20
 for cpu kernels               - gn
  
-vectorization in other frameworks 
+vectorization in other frameworks                 0
 thrust, C++AMP code 
 
-write blogs                   - b
-LLVM intro                    - gn
+write blogs                   - b                 0
+LLVM intro                    - gn                0   
 working 
 
-discuss sycl for hpx 
+discuss sycl for hpx                               10
 
 Take picture of code structure why are using it as like 
-structure, and design, tmp etc
+structure, and design, tmp etc                                  0
 
 do real eval

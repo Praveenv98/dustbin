@@ -1,0 +1,36 @@
+This is the CREATION of THING in a program which I have seen across codebase of many projects C++ based. 
+                            
+                                      TYPE 
+                                        |
+                                      CONSTRUCTION_STYLE - How the objects of the TYPE is created i.e in which context the object is  
+                                        |                  preferred to create.
+                                        |                  Like std::async() function creates the futurized return values (std::future type)
+                                        |                  objects.
+                                        |
+                                      USUABILTIY         - Why is object of TYPE is created and how it's usage can be extended and how used 
+                                        |                  with other TYPE objects.       
+                                        |
+                                        |
+                                      SCOPE              - Where the object of TYPE should be used like host_side or device_side or cloud
+                                        |
+                                        |
+                                        |
+                                      TYPE_HANDLING      - This is how the object of TYPE interacting with the other objects of TYPE1,
+                                        |                  TYPE2, .... 
+                                        |                  Like parallel algorithm implementation works with executors and execution_policies
+                                        |                  and Function objects.
+                                        |                   
+                                        |
+                                      DESTRUCTION_ 
+                                              1.) STATIC  COMPLIER
+                                              2.) DYNAMIC please DO
+                                    
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
